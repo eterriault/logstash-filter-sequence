@@ -20,7 +20,7 @@ class LogStash::Filters::Example < LogStash::Filters::Base
   plugin_status "beta"
   
   # Set the maximum events with the same timestamp we can sequence up 
-  config :max, :validate => :number, :default => 10000  :required =>false 
+  config :max, :validate => :number, :default => 100000000,  :required =>false 
   
 
   public
